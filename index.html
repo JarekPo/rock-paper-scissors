@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rock Paper Scissors Game</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container-main">
+			<div id="instruction" class="box-flex">
+				<h1>Rock Paper Scissors Game</h1>
+				<p id="replace">Click on one of the pictures below to choose rock, paper or scissors. Computer will generate its choice randomlly.
+				</p>
+				<h3>Rules:</h3>
+				<ul>
+					<li>Rock wins against scissors.</li>
+					<li>Scissors win against paper.</li>
+					<li>Paper wins against rock.</li>
+				</ul>
+			</div>
+			<div class="container-pictures">
+				<div id="rock" class="box-flex picture-div" onclick="choseRock()">
+					<img src="images/rock.png" alt="rock" /><br />
+					ROCK
+				</div>
+				<div id="paper" class="box-flex picture-div" onclick="chosePaper()">
+					<img src="images/paper.png" alt="paper" /><br />
+					PAPER
+				</div>
+				<div id="scissors" class="box-flex picture-div" onclick="choseScissors()">
+					<img src="images/scissors.png" alt="scissors" /><br />
+					SCISSORS
+				</div>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>

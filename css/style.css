@@ -1,0 +1,41 @@
+body{
+	background-color: #deaa88
+;
+	color: #6d1b01;
+	font-family: verdana;
+}
+.container-main{
+	text-align: center;
+}
+.container-pictures{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#instructions{
+	margin: 0 auto;
+}
+.picture-div{
+	border: 3px solid black;
+	border-radius:30%;
+	margin: 20px;
+	color: black;
+	font-weight: bold;
+	box-shadow: 2px 2px;
+}
+.picture-div:hover{
+	background-color: #c0684b;
+	box-shadow: 5px 5px;
+	margin-top: 17px;
+}
+ul{
+	display: table;
+	margin: 0 auto;
+}
+li{
+	text-align: left;
+}
+img{
+	cursor: pointer;
+}
