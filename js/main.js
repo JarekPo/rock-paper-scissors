@@ -3,6 +3,7 @@ var computerChoice;
 var displayCompChoice;
 var userWins=0;
 var compWins=0;
+var count=0;
 
 function choseRock(){
 	userChoice="Rock";
@@ -18,6 +19,7 @@ function choseScissors(){
 }
 
 function check(){
+	count++;
 	computerChoice=Math.floor(Math.random()*3)+1;
 	if (computerChoice==1){
 		displayCompChoice="Rock";
@@ -57,4 +59,8 @@ function check(){
 		userWins++;
 	}
 	document.getElementById("replace").innerHTML="Your wins: "+userWins+", Computer's wins: "+compWins;
+	if(count>2 || userWins>0){
+		document.getElementById("rules").style.display="none";
+		document.getElementById("stop-game").innerHTML="<h1>Game over</h1>";
+	}
 }
