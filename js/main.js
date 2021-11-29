@@ -4,6 +4,7 @@ var displayCompChoice;
 var userWins=0;
 var compWins=0;
 var count=0;
+var userChoices=[];
 
 function choseRock(){
 	userChoice="Rock";
@@ -19,6 +20,7 @@ function choseScissors(){
 }
 
 function check(){
+	userChoices.push(userChoice);
 	count++;
 	computerChoice=Math.floor(Math.random()*3)+1;
 	if (computerChoice==1){
@@ -59,8 +61,8 @@ function check(){
 		userWins++;
 	}
 	document.getElementById("replace").innerHTML="Your wins: "+userWins+", Computer's wins: "+compWins;
-	if(count>2 || userWins>0){
+	if(count>4 || userWins>0){
 		document.getElementById("rules").style.display="none";
-		document.getElementById("stop-game").innerHTML="<h1>Game over</h1>";
+		document.getElementById("stop-game").innerHTML="<h1>Game over<br />Sequence of your choices: "+userChoices.toString()+"</h1>";
 	}
 }
