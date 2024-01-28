@@ -1,4 +1,4 @@
 # rock-paper-scissors
-A Rock Paper Scissors game
+A browser-based rock-paper-scissors game to keep you entertained.
 
-[Demo](https://jarekpo.github.io/rock-paper-scissors/)
+[DEMO](https://jarekpo.github.io/rock-paper-scissors/)
